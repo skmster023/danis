@@ -1,0 +1,54 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel
+	="stylesheet" type="text/css">
+
+<style>
+	#pag1 {
+		background-color:lightyellow;
+		margin: 0px;
+		padding-top: 1px;
+	}	
+	#bgy {
+		background-color:lightyellow;
+	}	
+	#pic-border {
+		border-color: green;
+		border-width:thick;
+		border-style: solid;
+		border-radius: 50%;
+		width: 300px;
+	}
+	#gif-border {
+		border-color: red;
+		border-width:thick;
+		border-style: solid;
+		border-radius: 30%;
+	}
+	#serif-font {
+		font-family: serif;
+		font-size: medium
+	}
+	.Lobster{
+		font-family: Lobster;
+		font-size: 70px;
+		font-style: italic;
+		
+	}
+	.spacing{
+		padding: 100 0 0 0;
+	}
+	.h1 {
+		font-family: Lobster;
+	}
+	#btn {
+		color: white;
+		background-color: green;
+		border-radius: 20%;
+		border-color: black;
+		border-style: solid;
+	}
+	#containerInfo {
+		color: green;
+		margin: 20 20 20 20;
+		font-size: large;
+	}
+</style>
