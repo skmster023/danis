@@ -18,16 +18,15 @@ btn.addEventListener("click", function() {
         } else {
       	 console.log("We connected to the server, but it returned an error.");
       }
-    }/*else if(counterClicks > 0){
-      btn.classList.add("hide-me");
-    }*/
+    }
+    btn.classList.add("hide-me");
   };
 
   ourRequest.onerror = function() {
     console.log("Connection error");
   };
-
-ourRequest.send();
+  
+  ourRequest.send();
 
 }); //curly brace to close function discription. 
 		//paranthesis to close EventListener.
