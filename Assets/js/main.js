@@ -34,7 +34,7 @@ btn.addEventListener("click", function() {
 function renderHTML(data) {
   var htmlString = "";
   var i = getRandomInt(0,data.length);
-  var j = getRandomInt(0,data.foods.likes.length);
+  var j = getRandomInt(0,data.foods.length);
     htmlString += "<p>Thank you for submitting</p>"
     htmlString += "<p>Here is a random fact about Dani:</p>"
     htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat" + data[i].foods.likes[j] + ".</p>";
