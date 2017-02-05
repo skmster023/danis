@@ -1,10 +1,10 @@
 var animalContainer = document.getElementById("animal-info");
 var btn = document.getElementById("btn");
-
+var json = $.getJSON("Assets/js/Dani.JSON");
 
 btn.addEventListener("click", function() {
   var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', $.getJSON("Dani.json"));
+  ourRequest.open('GET', json);
   ourRequest.onload = function() {
     if (ourRequest.status >= 200 && ourRequest.status < 400) {
       var ourData = JSON.parse(ourRequest.responseText);
