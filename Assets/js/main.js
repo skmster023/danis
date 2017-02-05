@@ -36,10 +36,8 @@ function renderHTML(data) {
   var i = getRandomInt(0,data.length);
   var j = getRandomInt(0,data.likes.length);
     htmlString += "<p>Thank you for submitting</p>"
-    htmlString += "Here is a random fact about Dani:</p>"
+    htmlString += "<p>Here is a random fact about Dani:</p>"
     htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat" + data[i].likes[j] + ".</p>";
-
-    htmlString += '.</p>';
-
+  
   animalContainer.insertAdjacentHTML('beforeend', htmlString);
 }
