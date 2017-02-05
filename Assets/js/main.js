@@ -1,31 +1,33 @@
+var counterClicks = 0
 var animalContainer = document.getElementById("animal-info");
 var btn = document.getElementById("btn");
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-btn.addEventListener("click", function() {
-  var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', 'Assets/js/Dani.json');
-  ourRequest.onload = function() {
-    if (ourRequest.status >= 200 && ourRequest.status < 400) {
-      var ourData = JSON.parse(ourRequest.responseText);
-      renderHTML(ourData);
-    } else {
-      console.log("We connected to the server, but it returned an error.");
-    }
+if(counterClicks < 0) {
+	btn.addEventListener("click", function() {
+  		var ourRequest = new XMLHttpRequest();
+  		ourRequest.open('GET', 'Assets/js/Dani.json');
+  	ourRequest.onload = function() {
+    	if (ourRequest.status >= 200 && ourRequest.status < 400) {
+      	var ourData = JSON.parse(ourRequest.responseText);
+      	renderHTML(ourData);
+    	} else {
+      		console.log("We connected to the server, but it returned an error.");
+    	}
     
-  };
+  	};
 
-  ourRequest.onerror = function() {
-    console.log("Connection error");
-  };
+  	ourRequest.onerror = function() {
+    	console.log("Connection error");
+  	};
 
-  ourRequest.send();
+  	ourRequest.send();
   
-});
-
+	}); //curly brace to close function discription. 
+		//paranthesis to close EventListener.
+}
 function renderHTML(data) {
   var htmlString = "";
   var i = getRandomInt(0,data.length);
