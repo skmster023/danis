@@ -1,7 +1,7 @@
 var container = document.getElementById("containerInfo");
-var btn = document.getElementById('btn');
+var btn = document.getElementById("btn");
 
-btn.addEventListener("click", function()) {
+btn.addEventListener("click", function() {
 	var ourRequest = new XMLHttpRequest();
 	ourRequest.open('GET', 'danis/Assets/js/Dani.json');					
 	ourRequest.onload = function() {
