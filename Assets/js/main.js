@@ -1,6 +1,8 @@
 var animalContainer = document.getElementById("animal-info");
 var btn = document.getElementById("btn");
-var json = $.getJSON("Assets/js/Dani.JSON");
+var json = $.getJSON("Assets/js/Dani.JSON", function(json){
+	console.log(json);
+});
 
 btn.addEventListener("click", function() {
   var ourRequest = new XMLHttpRequest();
