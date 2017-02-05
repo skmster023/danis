@@ -32,21 +32,11 @@ function renderHTML(data) {
   for (i = 0; i < data.length; i++) {
     htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat ";
     
-    for (ii = 0; ii < data[i].foods.likes.length; ii++) {
-      if (ii == 0) {
-        htmlString += data[i].foods.likes[ii];
+    for (j = 0; j < data[i].foods.likes.length; j++) {
+      if (j == 0) {
+        htmlString += data[i].foods.likes[j];
       } else {
-        htmlString += " and " + data[i].foods.likes[ii];
-      }
-    }
-
-    htmlString += ' and dislikes ';
-
-    for (ii = 0; ii < data[i].foods.dislikes.length; ii++) {
-      if (ii == 0) {
-        htmlString += data[i].foods.dislikes[ii];
-      } else {
-        htmlString += " and " + data[i].foods.dislikes[ii];
+        htmlString += " and " + data[i].foods.likes[j];
       }
     }
 
