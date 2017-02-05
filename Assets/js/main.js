@@ -34,8 +34,8 @@ btn.addEventListener("click", function() {
 function renderHTML(data) {
   var htmlString = "";
   var i = getRandomInt(0,data.length);
+    htmlString += "<p>Thank you for submitting /n</p>"
     htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat ";
-    
     for (j = 0; j < data[i].foods.likes.length; j++) {
       if (j == 0) {
         htmlString += data[i].foods.likes[j];
