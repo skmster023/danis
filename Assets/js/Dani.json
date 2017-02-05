@@ -1,23 +1,30 @@
 [
   {
-    "name": "Dani",
+    "picture": "picture0",
     "species" : "dog",
     "foods": {
       "likes": ["chicken", "rice"]
     }
   },
   {
-    "name": "Dani",
+    "picture": "picture1",
     "species" : "dog",
     "foods": {
       "likes": ["bones", "carrots"]
     }
   },
   {
-    "name": "Dani",
+    "picture": "picture2",
     "species" : "dog",
     "foods": {
       "likes": ["mice"]
     }
-  }
+  },
+  {
+    "picture": "picture3",
+    "species" : "dog",
+    "foods": {
+      "likes": ["chicken", "rice"]
+    }
+  },
 ]

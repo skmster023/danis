@@ -18,6 +18,8 @@ btn.addEventListener("click", function() {
         } else {
       	 console.log("We connected to the server, but it returned an error.");
       }
+    }else{
+      btn.classList.add("hide-me");
     }
   };
 
