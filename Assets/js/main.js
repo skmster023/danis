@@ -15,7 +15,7 @@ function renderHTML(data) {
 	var htmlString = "";
 
 	for(i=0; i<data; i++) {
-		htmlString += "<p>Dani is a! " + data[i].attribute + "dog!</p>";
+		htmlString += "<p>Dani is a! " + data[i].species + "dog!</p>";
  	}
 	
 	container.insertAdjacentHTML('beforeend', htmlString);
