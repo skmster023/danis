@@ -34,7 +34,6 @@ btn.addEventListener("click", function() {
 function renderHTML(data) {
   var htmlString = "";
   var i = getRandomInt(0,data.length);
-  for (i; i < data.length; i++) {
     htmlString += "<p>" + data[i].name + " is a " + data[i].species + " that likes to eat ";
     
     for (j = 0; j < data[i].foods.likes.length; j++) {
@@ -46,8 +45,6 @@ function renderHTML(data) {
     }
 
     htmlString += '.</p>';
-
-  }
 
   animalContainer.insertAdjacentHTML('beforeend', htmlString);
 }
