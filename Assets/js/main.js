@@ -1,12 +1,11 @@
-var counterClicks = 0
+var counterClicks = 0;
 var animalContainer = document.getElementById("animal-info");
 var btn = document.getElementById("btn");
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-if(counterClicks > 0) {
-	counterClicks++;
+if(counterClicks == 0) {
 	btn.addEventListener("click", function() {
   		var ourRequest = new XMLHttpRequest();
   		ourRequest.open('GET', 'Assets/js/Dani.json');
@@ -28,6 +27,8 @@ if(counterClicks > 0) {
   
 	}); //curly brace to close function discription. 
 		//paranthesis to close EventListener.
+
+  counterClicks++;
 }
 function renderHTML(data) {
   var htmlString = "";
