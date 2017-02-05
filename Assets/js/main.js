@@ -3,7 +3,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function() {
 	var ourRequest = new XMLHttpRequest();
-	ourRequest.open('GET', 'https://boiling-thicket-91212.herokuapp.com/danis/Assets/js/Dani.json');					
+	ourRequest.open('GET', 'file:///Users/EG/Documents/Code/Danis/Assets/js/Dani.json');					
 	ourRequest.onload = function() {
 		var ourData = JSON.parse(ourRequest.responseText);
 		renderHTML(ourData);
